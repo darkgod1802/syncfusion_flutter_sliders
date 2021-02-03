@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     dateFormat: DateFormat.y(),
                     showTicks: true,
                     showLabels: true,
-                    // child: Container(
+                    child: Container()
                     //   child: SfCartesianChart(
                     //     margin: const EdgeInsets.all(0),
                     //     primaryXAxis: DateTimeAxis(
