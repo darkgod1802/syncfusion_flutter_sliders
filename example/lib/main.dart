@@ -58,39 +58,41 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(0),
           child: Stack(
             children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(top: 10),
-                child: Center(
-                  // ignore: missing_required_param
-                  child: SfRangeSelector(
-                    min: _dateMin,
-                    max: _dateMax,
-                    initialValues: _dateValues,
-                    labelPlacement: LabelPlacement.betweenTicks,
-                    interval: 1,
-                    dateIntervalType: DateIntervalType.years,
-                    dateFormat: DateFormat.y(),
-                    showTicks: true,
-                    showLabels: true,
-                    // child: Container(
-                    //   child: SfCartesianChart(
-                    //     margin: const EdgeInsets.all(0),
-                    //     primaryXAxis: DateTimeAxis(
-                    //       minimum: dateMin,
-                    //       maximum: dateMax,
-                    //       isVisible: false,
-                    //     ),
-                    //     primaryYAxis:
-                    // NumericAxis(isVisible: false, maximum: 4),
-                    //     series: <SplineAreaSeries<Data, DateTime>>[
-                    //       SplineAreaSeries<Data, DateTime>(
-                    //           dataSource: chartData,
-                    //           xValueMapper: (Data sales, _) => sales.x,
-                    //           yValueMapper: (Data sales, _) => sales.y)
-                    //     ],
-                    //   ),
-                    //   height: 200,
-                    // ),
+              SafeArea(
+                  child: Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: Center(
+                    child: Container(
+                      height: 250,
+                      color: Colors.black,
+                      // ignore: missing_required_param
+                      child: SfSlider(
+                        activeColor: Colors.white,
+                        inactiveColor: Colors.white12,
+                        showDivisors: true,
+                        // numberFormat: NumberFormat('Bs'),
+                        showLabels: true,
+                        interval : 2.0,
+                        stepSize: 2.0,
+                        showTicks: true,
+                        onChanged: (valor) {
+                          setState(() {
+                            // _tip = valor;
+                          });
+                        },
+                        value: 5.0,
+                        max: 10.0,
+                        min: 2.0,
+                        // min: _dateMin,
+                        // max: _dateMax,
+                        // labelPlacement: LabelPlacement.betweenTicks,
+                        // interval: 1,
+                        // dateIntervalType: DateIntervalType.years,
+                        // dateFormat: DateFormat.y(),
+                        // showTicks: true,
+                        // showLabels: true,
+                      ),
+                    ),
                   ),
                 ),
               ),

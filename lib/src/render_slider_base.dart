@@ -1181,10 +1181,8 @@ class RenderBaseSlider extends RenderProxyBox
     }
 
     final TextSpan textSpan = TextSpan(
-      text: text,
-      style: isInactive
-          ? themeData.inactiveLabelStyle
-          : themeData.activeLabelStyle,
+      text: int.parse(text).toStringAsFixed(2),
+      style: TextStyle(color: Colors.white, fontSize: 12.0),
     );
     textPainter.text = textSpan;
     textPainter.layout();
