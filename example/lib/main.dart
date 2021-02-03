@@ -1,6 +1,5 @@
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 // import 'package:syncfusion_flutter_charts/charts.dart' hide LabelPlacement;
-import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
