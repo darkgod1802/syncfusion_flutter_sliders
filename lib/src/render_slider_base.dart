@@ -1181,7 +1181,7 @@ class RenderBaseSlider extends RenderProxyBox
     }
 
     final TextSpan textSpan = TextSpan(
-      text: double.parse(text).toStringAsFixed(1),
+      text: double.parse(text).toString(),
       style: TextStyle(color: Colors.white, fontSize: 9.0, 
         fontStyle: FontStyle.italic),
     );
