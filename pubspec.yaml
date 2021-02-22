@@ -3,13 +3,13 @@ description: Syncfusion Flutter Sliders library is written natively in Dart for 
 version: 18.3.35-beta
 
 environment:
-  sdk: ">=2.8.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  intl: 0.17.0
+  intl: 0.16.1
   syncfusion_flutter_core:
     git:
       url: https://github.com/darkgod1802/syncfusion_flutter_core.git
